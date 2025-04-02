@@ -49,18 +49,15 @@ movie_titles <- movie_rating_2024 |>
   html_text()
 movie_titles
 
-# way 1 to extract movie years 
+movie_rating_2024 |> html_nodes("*") |> html_text()
+
+
 movie_years <- movie_rating_2024 |> 
-  html_nodes(".sc-f30335b4-6.kGhnhC.dli-title-metadata")|> 
+  html_nodes("span.sc-6addea7c-0")|> 
   html_text() |>
   str_extract("\\d{4}")
 movie_years
 
-# way 2 to extract movie years
-movie_metadata_containers <- movie_rating_2024 %>% html_nodes(".sc-f30335b4-6.kGhnhC.dli-title-metadata")
 
-years <- movie_metadata_containers %>%
-  html_nodes("span.sc-f30335b4-7.jhjEEd.dli-title-metadata-item:nth-child(1)") %>% # Select the first child
-  html_text() %>%
-  trimws() # Remove leading/trailing whitespace
-years
+#######################
+
