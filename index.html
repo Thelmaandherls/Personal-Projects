@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>HTML Cheatsheet</title>
+    </head>
+    <body>
+        <!-- Headers-->
+         <h1>Types of heading</h1>
+         <h2>Heading 2</h2>
+         <h3>Heading 3</h3>     
+         <h4>Heading 4</h4>
+         <h5>Heading 5</h5>
+         <h6>Heading 6</h6>
+
+        <!--Paragrpahs -->
+        <p> Lorem <strong> dolor </strong> amet <em>consectetur</em> adipisicing <a href=''For links'' target="_blank">elit </a>. 
+            Porro, ipsa accusantium iusto totam laudantium quae rerum 
+            architecto iste? Quibusdam debitis pariatur odit nulla!
+             Officia temporibus porro provident sunt distinctio excepturi?
+        
+        <!-- <a href=''For links'' target="_blank"> - for links, target=_blank 
+            opens a new tab - best for external website-->
+        </p>
+
+        <!-- Lists: unordered then ordered-->
+        <!-- Unordered = uses bullet points - tends to be used for website anvigation but w styling -->
+        <ul>
+            <li>List item 1</li>
+            <li>List item 2</li>
+            <li>List item 3</li>
+        </ul>
+         <!-- Ordered - ahs numbers -->
+        <ol>
+            <li>List item 1</li>
+            <li>List item 2</li>
+            <li>List item 3</li>
+
+        <!--Tables: use only for tabular data - use CSS for layouts -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th> <!-- Headings-->
+                    <th>Email</th>
+                    <th>Age</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>T</td> <!--Actual data-->
+                    <td>T@T</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td>T</td> <!--Actual data-->
+                    <td>T@T</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td>T</td> <!--Actual data-->
+                    <td>T@T</td>
+                    <td>12</td>
+                </tr>
+            </table>
+
+        <!--Forms--> 
+        <br> <!--Line break-->
+        <hr> <!--Horizontal line-->
+        <form action="https://example.com" method="POST"> <!--action = where to send data, method = how to send data - add data to database-->
+            <!--Divs are block level elemtns to wrapping them around in a dvi will put them on the next line-->
+            <div>>
+                <label for="name">First Name:</label> <!--Label for the input field-->
+                <input type="text" id="name" name="firstName"><br><br> <!--Input field for text - name is how we get name from php-->
+            </div> 
+            <div>
+                <label for="name">Last Name:</label> <!--Labels and inputs are both inline and only take up the width that the elements itself takes up-->
+                <input type="text" id="name" name="lastName", placeholder="Enter first name"><br><br> <!--Input field for text - name is how we get name from php-->
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br><br> <!--use type email that will autocheck it's an email-->
+            </div>
+            <div>
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age", value="30"><br><br> <!--Input field for number-->
+            </div>
+            <div>
+                <label>Birthday</label>
+                <input type="date" name="birthday"><br><br>
+            <div>
+                <label>Message</label>
+                <textarea name="message" rows="5" cols="40"></textarea> <!--Textarea for larger text input-->
+            </div>
+            <div>
+                <label>Gender</label>
+                <select>name="gender"</select>
+                    <option value="male"> Male </option>
+                    <option value="female"> Female </option>
+                    <option value="other"> Other </option>
+            </div>
+            <div>
+                <input type="submit" value="Submit", value="Submit"> <!--Submit button-->
+            </div>
+        </form>
+
+        <!--Buttons-->
+        <button type="button" onclick="alert('Hello!')">Click me!</button> <!--Button that does something when clicked-->
+        
+        <br>
+        <!--Images: inline -->
+        <img src="https://via.placeholder.com/150" alt="Placeholder Image", width="200", height="200"> <!--Image with alt text-->
+
+        <!-- Quotations-->
+        <blockquote cite="https://example.com"> <!--Blockquote for longer quotes-->
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Quisquam, voluptatibus.</p>
+        </blockquote>
+
+        <p> The <abbr title ="World Wide Web">WWW is awesome</abbr></p> <!--Paragraph for shorter quotes-->
+
+        <p><cite>HTML basics cheatsheet</cite> pour moi</p> <!--Cite for referencing a work-->
+        <div style="margin-top:500px"></div> <!--Can scroll-->
+    </body>
+</html>
