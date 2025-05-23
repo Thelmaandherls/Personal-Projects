@@ -1,0 +1,30 @@
+{
+  "node_modules\\@react-three\\drei\\core\\VideoTexture.js -> hls.js": {
+    "id": "node_modules\\@react-three\\drei\\core\\VideoTexture.js -> hls.js",
+    "files": []
+  },
+  "node_modules\\@react-three\\drei\\web\\FaceLandmarker.js -> @mediapipe/tasks-vision": {
+    "id": "node_modules\\@react-three\\drei\\web\\FaceLandmarker.js -> @mediapipe/tasks-vision",
+    "files": [
+      "static/chunks/_pages-dir-browser_node_modules_mediapipe_tasks-vision_vision_bundle_mjs.js"
+    ]
+  },
+  "node_modules\\next\\dist\\client\\index.js -> ../pages/_app": {
+    "id": "node_modules\\next\\dist\\client\\index.js -> ../pages/_app",
+    "files": [
+      "static/chunks/_pages-dir-browser_node_modules_next_dist_pages__app_js.js"
+    ]
+  },
+  "node_modules\\next\\dist\\client\\index.js -> ../pages/_error": {
+    "id": "node_modules\\next\\dist\\client\\index.js -> ../pages/_error",
+    "files": [
+      "static/chunks/_pages-dir-browser_node_modules_next_dist_pages__error_js.js"
+    ]
+  },
+  "pages\\index.tsx -> ../components/AnimatedStory": {
+    "id": "pages\\index.tsx -> ../components/AnimatedStory",
+    "files": [
+      "static/chunks/_pages-dir-browser_components_AnimatedStory_tsx.js"
+    ]
+  }
+}

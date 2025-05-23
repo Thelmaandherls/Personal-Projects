@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background-color: #ffffff;
+  --text-color: #000000;
+}
+
+[data-theme='dark'] {
+  --background-color: #000000;
+  --text-color: #ffffff;
+}
+
+/* ========== Global Reset / Defaults ========== */
+html,
+body, #__next {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: 'Inter', system-ui, sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  scroll-behavior: smooth;
+  cursor: pointer; /* hide system cursor for custom cursor */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ========== Smooth Transitions ========== */
+* {
+  transition: all 0.2s ease-in-out;
+}
+
+/* ========== Custom Scrollbar ========== */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #888;
+}
+
+/* ========== Custom Selection ========== */
+::selection {
+  background-color: #ffffff22;
+  color: #fff;
+}
+
+/* ========== Fonts (Optional via @import) ========== */
+/* You can import Google Fonts in _document.tsx or here */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+
+/* ========== Cursor Effects (Fallback) ========== */
+body.no-cursor {
+  cursor: none;
+}
+
+/* Tailwind will handle most layout/styling via utility classes */
